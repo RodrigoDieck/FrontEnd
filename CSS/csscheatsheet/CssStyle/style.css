@@ -8,11 +8,11 @@
 body{
     background-color: white
 ;
-    color: rebeccapurple;
+    color: black;
 
     font-family: Arial, Helvetica, sans-serif;
 
-    font-size: 24px;
+    font-size: 16px;
     font-weight: bold;
 
     /* same as above
@@ -42,12 +42,29 @@ a:active{
 }
 /*cuando ya le picasate se cambia*/
 a:visited{
-    color: yellow;
+    color: none;
 
 }
 .container{
     width: 80%;
     margin: auto;
+}
+
+.botton{
+    background-color: yellow;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+
+}
+
+.botton:hover{
+    background: red;
+    color: white;
+}
+
+.clr{
+    clear: both;
 }
 
 .box-1{
@@ -109,6 +126,7 @@ a:visited{
 
 .categories ul{
     padding: 0;
+    padding-left: 30px;
     list-style: square;
     list-style: none;
 }
@@ -116,4 +134,105 @@ a:visited{
 .categories li{
     padding-bottom: 6px;
     border-bottom: dotted 1px #333333;
+    list-style-image: url("../images/check.png");
+}
+
+.my-from{
+    padding: 20px;
+
+}
+
+.my-from .from-group{
+    padding-bottom: 15px;
+
+}
+
+/*block es para que se vaya para bajo y deje espacio*/
+.my-from label{
+    display: block;
+}
+
+/*lo de text hace que nomas sean los inputs de text y no los otros como el boton. El de textarea es para el mensaje que tambien sea igual*/
+.my-from input[type="text"], .my-form textarea{
+
+    padding: 8px;
+    width: 100%;
+}
+
+.block{
+
+    float: left;
+    width: 33.3%;
+    border: 1px solid #333;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#main-block{
+    float: left;
+    width: 70%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+#sidebar{
+    float: left;
+    width: 30%;
+    background-color: red;
+    color: white;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+
+/*position relative es para que el texto se quede donde este y luego ya lo puedas mover*/
+.p-box{
+    width: 800px;
+    height: 500px;
+    border: 1px solid #000;
+    margin-top: 30px;
+    position: relative;
+    background-image: url("../images/bgimage.jpg");
+    background-position: 100px 200px;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+/*abosolute the deja poner el texto donde quieras*/
+.p-box h1{
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
+
+.p-box h2{
+    position: absolute;
+    top: 40px;
+    left: 100px;
+}
+
+/*fixed es para que el texto siempre se quede donde mismo a pesar de que muevas la pagina*/
+.fix-me{
+    position: fixed;
+    top: 400px;
+}
+
+.my-list li:first-child{
+    background: red;
+    
+}
+
+.my-list li:last-child{
+    background: red;
+    
+}
+
+.my-list li:nth-child(5){
+    background: yellow;
+
+}
+
+.my-list li:nth-child(even){
+    background: blue;
+    
 }
