@@ -8,6 +8,15 @@
     padding: 24px 24px 0px 24px;
 }
 
+
+.row{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+
+}
+
+
 .title {
     border: 2px solid lightgray;
     width: 100%;
